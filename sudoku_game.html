@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sudoku game">
+    <meta name="description" content="Play numberical game containing grid">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku_game.css">
+    <style>
+        .cell {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div>
+            <div class="header-element1">
+                <a href="../homepage.html">Sudoku.com</a>
+            </div>
+        </div>
+        <div>
+            <div class="header-element2">
+                PLAY SUDOKU
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        <div>
+            <div class="board">
+                <table cellspacing="0px">
+                    <tbody>
+                        <tr>
+                            <td class="topleft"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">1</td>
+                        </tr>
+                        <tr>
+                            <td class="left"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">2</td>
+                        </tr>
+                        <tr>
+                            <td class="left"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">3</td>
+                        </tr>
+                        <tr>
+                            <td class="topleft"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">4</td>
+                        </tr>
+                        <tr>
+                            <td class="left"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">5</td>
+                        </tr>
+                        <tr>
+                            <td class="left"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">6</td>
+                        </tr>
+                        <tr>
+                            <td class="topleft"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topmiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="topright"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">7</td>
+                        </tr>
+                        <tr>
+                            <td class="left"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="middle"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="right"><input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">8</td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottommiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottomright"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottommiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottommiddle">
+                                <input type="text" inputmode="numeric" class="cell" autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottomright"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottommiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottommiddle"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="bottomright"><input type="text" inputmode="numeric" class="cell"
+                                    autocomplete="off">
+                                <div class="notes">
+                                    <div class="numbers">1</div>
+                                    <div class="numbers">2</div>
+                                    <div class="numbers">3</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">4</div>
+                                    <div class="numbers">5</div>
+                                    <div class="numbers">6</div>
+                                </div>
+                                <div class="notes">
+                                    <div class="numbers">7</div>
+                                    <div class="numbers">8</div>
+                                    <div class="numbers">9</div>
+                                </div>
+                            </td>
+                            <td class="index">9</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="index">1</td>
+                            <td class="index">2</td>
+                            <td class="index">3</td>
+                            <td class="index">4</td>
+                            <td class="index">5</td>
+                            <td class="index">6</td>
+                            <td class="index">7</td>
+                            <td class="index">8</td>
+                            <td class="index">9</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="feature">
+                <table cellspacing="0">
+                    <tr>
+                        <td class="attribute">
+                            <figure>
+                                <button class="option logo" onclick="time()">
+                                    <img src="pause.svg" alt="pause" id="time_icon" height="80px" width="80px">
+                                </button>
+                                <figcaption id="time name" class="show">Pause Game</figcaption>
+                            </figure>
+                        </td>
+                        <td class="attribute show" id="time_show"></td>
+                        <td class="attribute">
+                            <figure>
+                                <button class="option logo" onclick="hint()">
+                                    <img src="hint.png" alt="pause" id="hint_icon" height="80px" width="80px">
+                                </button>
+                                <figcaption id="hint name"  class="show">
+                                    Hint
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="attribute show" id="hints"></td>
+                    </tr>
+                    <tr>
+                        <td class="attribute logo unique">Mistakes</td>
+                        <td class="attribute show" id="mistakes"></td>
+                        <td class="attribute">
+                            <button class="option" onclick="newgame()">
+                                New Game
+                            </button>
+                        </td>
+                        <td class="attribute">
+                            <button class="option" onclick="printgrid()">
+                                Print Sudoku Grid
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attribute"><button class="option numpad" id="1" onclick="numpad(1)">1</button></td>
+                        <td class="attribute"><button class="option numpad" id="2" onclick="numpad(2)">2</button></td>
+                        <td class="attribute"><button class="option numpad" id="3" onclick="numpad(3)">3</button></td>
+                        <td class="attribute">
+                            <button class="option" onclick="notes()">
+                                Notes
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attribute"><button class="option numpad" id="4" onclick="numpad(4)">4</button></td>
+                        <td class="attribute"><button class="option numpad" id="5" onclick="numpad(5)">5</button></td>
+                        <td class="attribute"><button class="option numpad" id="6" onclick="numpad(6)">6</button></td>
+                        <td class="attribute">
+                            <button class="option" onclick="clear_notes()">
+                                Clear notes
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attribute"><button class="option numpad" id="7" onclick="numpad(7)">7</button></td>
+                        <td class="attribute"><button class="option numpad" id="8" onclick="numpad(8)">8</button></td>
+                        <td class="attribute"><button class="option numpad" id="9" onclick="numpad(9)">9</button></td>
+                        <td class="attribute">
+                            <button class="option" onclick="reset()">
+                                Reset Game
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About sudoku ---</h2>
+        <br>
+        <ul class="tips">
+            <li>Sudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares”
+                (made up of
+                3 x 3 spaces).</li>
+            <br>
+            <li>Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9,
+                without
+                repeating any numbers within the row, column or square.</li>
+        </ul>
+    </div>
+    <div id="gameover">
+        <div>
+            <h1>Gameover</h1>
+            You made too many miskates <br> and lost this game
+        </div>
+        <div>
+            <button class="reset" onclick="second_chance()">Second Chance</button>
+        </div>
+        <div>
+            <button class="reset" onclick="newgame()">New Game</button>
+        </div>
+    </div>
+    <script src="sudoku_game.js"></script>
+</body>
+
+</html>
